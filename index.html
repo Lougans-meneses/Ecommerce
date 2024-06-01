@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/41323b41f6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
+    <title>E-commerce | OBoticário</title>
+</head>
+
+<body>
+    <header class="container-cabecalho">
+        <img src="assets/images/logo.png" alt="Logo do O Boticário" class="imagem-logo">
+        <nav class="nav-links-cabecalho">
+            <ul class="lista-links-cabecalho">
+                <li><a href="index.html" class="link-cabecalho">Home</a></li>
+                <li><a href="assets/promocoes.html" class="link-cabecalho">Promoções</a></li>
+                <li><a href="assets/catalogo.html" class="link-cabecalho">Catálogo</a></li>
+            </ul>
+        </nav>
+        <nav class="icones-cabecalho">
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </nav>
+    </header>
+    <main>
+        <section class="container-collection">
+            <div class="container">
+                <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img class="d-block w-100 rounded" src="assets/images/BLOG_24_Os-produtos-do-Boticario-1.jpg" alt="">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 rounded" src="assets/images/melhores-perfumes-o-boticario-1.jpg" alt="">
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item">
+                            <img class="d-block w-100 rounded" src="assets/images/imagem-collection.jpg" alt="">
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        </section>
+        <section class="container-lista-imagens">
+            <div class="container-pele">
+                <span>Pele</span>
+                <a href="#" class="botao-padrao">Comprar</a>
+            </div>
+            <div class="container-make">
+                <span>Maquiagem</span>
+                <a href="#" class="botao-padrao">Comprar</a>
+            </div>
+            <div class="container-skincare">
+                <span>Skincare</span>
+                <a href="#" class="botao-padrao">Comprar</a>
+            </div>
+        </section>
+        <section class="container-best-seller">
+            <div class="titulo-best-seller">
+                <h2>Melhores Produtos</h2>
+                <button class="botao-padrao" id="button-skin">Pele</button>
+                <button class="botao-padrao hide-button" id="button-make">Maquiagem</button>
+            </div>
+            <div class="container-lista-best-seller" id="skin">
+                <ul class="lista-best-seller">
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/lichia.png" alt="Loção hidratante Lichia">
+                        <p class="descricao-produtos">Loção hidratante Nativa Spa Lichia</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/rose.jpg" alt="Loção revitalizante Rose">
+                        <p class="descricao-produtos">Loção revitalizante Nativa Spa Rosé</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/ameixa-negra.jpg" alt="Loção hidratante Ameixa Negra">
+                        <p class="descricao-produtos">Loção hidratante Nativa Spa Ameixa Negra</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/cuide-se bem.jpg" alt="Creme de limpeza facial">
+                        <p class="descricao-produtos">Creme de Limpeza Facial Antioxidante</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/beijinhoo.jpeg" alt="Loção hidratante beijinho">
+                        <p class="descricao-produtos">Loção hidratante Beijinho</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/lily-essence.png" alt="Creme acetinado Lily Essence">
+                        <p class="descricao-produtos">Creme Acetinado Hidratante Desodorante Corporal Lily</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/lavandinha.jpg" alt="Loção hidratante Lavandinha">
+                        <p class="descricao-produtos">Loção hidratante Lavandinha</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/skin/oleo-ameixa.jpg" alt="Óleo corporal Ameixa Negra">
+                        <p class="descricao-produtos">Óleo corporal Ameixa Negra</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="container-lista-best-seller hide-container" id="make">
+                <ul class="lista-best-seller">
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/batom liquido cushion.jpg" alt="Batom líquido">
+                        <p class="descricao-produtos">Batom Cushion Sun Hit</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/delineador lquido.jpg" alt="Delineador Líquido">
+                        <p class="descricao-produtos">Delineador Líquido</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/po compacto  iluminador.jpg" alt="Pó iluminador">
+                        <p class="descricao-produtos">Pó compacto iluminador</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/sombra sper glitter furta cor.jpg" alt="Sombra glitter">
+                        <p class="descricao-produtos">Sombra glitter By Manu</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/base liquida mate effet.jpg" alt="Base Efeito Mate">
+                        <p class="descricao-produtos">Base Líquida Matte</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/mascara explosion effect.jpg" alt="Máscara de cílios">
+                        <p class="descricao-produtos">Máscara de cílios Explosion</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/batom rosa cashmere.jpg" alt="Batom cremoso">
+                        <p class="descricao-produtos">Batom cremoso Rosa</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                    <li class="item-best-seller">
+                        <img src="assets/images/make/base liquida mate effet.jpg" alt="Base Efeito Mate">
+                        <p class="descricao-produtos">Base Líquida Matte</p>
+                        <p class="preco-produtos">R$ 25,00</p>
+                        <button class="btn-compra">Comprar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="container-rodape-principal">
+            <div class="rodape-itens">
+                <input type="email" id="email" class="input-email" placeholder="Digite seu email...">
+                <a class="botao-enviar"><i class="fa-solid fa-paper-plane"></i></a>
+            </div>
+        </section>
+        <section class="container-rodape-final">
+            <div class="rodape-final-dados">
+                <img src="assets/images/logo.png" alt="Logo do O Boticário">
+                <div class="redes-sociais">
+                    <a href="https://www.instagram.com/oboticario/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/oBoticario"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCBzHXqTZlKVe_aoDU5cbfRw"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="links-rodape">
+                <h4>Dúvidas</h4>
+                <a href="#">Perguntas Frequentes</a>
+                <a href="#">Frete e Entrega</a>
+                <a href="#">Troca e Devoluções</a>
+                <a href="#">Mapa do Site</a>
+            </div>
+            <div class="links-rodape">
+                <h4>Sustentabilidade</h4>
+                <a href="#">Nossos projetos</a>
+                <a href="#">Boti Recicla</a>
+                <a href="#">Refil</a>
+                <a href="#">Produtos Veganos</a>
+                <a href="#">Cruetly Free</a>
+                <a href="#">Beleza Transparente</a>
+            </div>
+            <div class="links-rodape">
+                <h4>Institucional</h4>
+                <a href="#">Nossa História</a>
+                <a href="#">Grupo Boticário</a>
+                <a href="#">Clube Viva</a>
+                <a href="#">Trabalhe Conosco</a>
+                <a href="#">Seja um Franqueado</a>
+                <a href="#">Portal do Revendedor</a>
+                <a href="#">Seja um Revendedor</a>
+                <a href="#">Encontre nossas Lojas</a>
+                <a href="#">Blog</a>
+                <a href="#">Faça sua Make</a>
+                <a href="#">Natal</a>
+            </div>
+        </section>
+        <div class="copyright-final">
+            <h5>Lougans Meneses</h5>
+            <a href="https://www.linkedin.com/in/lougans-moura/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Lougans-meneses"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="assets/script.js"></script>
+    <script src="assets/lib/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

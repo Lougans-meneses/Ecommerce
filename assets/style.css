@@ -1,0 +1,375 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: white;
+}
+.container-cabecalho{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+.imagem-logo{
+    width: 150px;
+    margin: .75em;
+}
+.nav-links-cabecalho li{
+    display: inline-block;
+    padding: 0 .75em;
+}
+.nav-links-cabecalho a{
+    position: relative;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #3A3A3A;
+    font-weight: 600;
+}
+.nav-links-cabecalho a::after{
+    position: absolute;
+    content: "";
+    background-color: #3B856A;
+    height: 2px;
+    width: 0;
+    left: 0;
+    bottom: -4px;
+    transition: 20ms;
+}
+.nav-links-cabecalho a:hover::after{
+    width: 100%;
+}
+.icones-cabecalho{
+    padding: .75em;
+    color: #3A3A3A;
+    cursor: pointer;
+}
+.icones-cabecalho .fa-user{
+    margin-right: 0.75em;
+}
+.carousel-inner img {
+    border-radius: 15px;
+    object-fit: cover;
+    height: 400px;
+    width: 100%;
+}
+.botao-padrao{
+    width: 120px;
+    height: 40px;
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: #3B856A;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms;
+}
+.hide-button{
+    background: #fff;
+    border: 2px solid #3B856A;
+    color: #3B856A;
+}
+.hide-button:hover{
+    color: #fff;
+}
+.botao-padrao:hover{
+    background-color: #386857;
+} 
+.container-lista-imagens{
+    display: flex;
+    flex-wrap: wrap;  
+    justify-content: space-around;
+}
+
+.container-pele, .container-make,.container-skincare{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+}
+.container-lista-imagens span{
+    font-size: 1.75em;
+    color: #ffffff;
+    margin: 30px;
+    font-weight: bold;
+}
+.container-lista-imagens .botao-padrao{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 200ms;
+}
+
+.container-lista-imagens a:hover{
+    background-color: #FFFFFF;
+    color: #386857;
+}
+.container-pele{
+    background-image: linear-gradient(rgba(58, 58, 58,0.42), rgba(58, 58, 58,0.42)), url(images/pele.png);
+    background-size: cover;
+
+    backdrop-filter: blur(100px);
+    backdrop-filter: opacity(20%);
+
+}
+.container-make{
+    background-image: linear-gradient(rgba(58, 58, 58,0.42), rgba(58, 58, 58,0.42)), url(images/make.png);
+    background-size: cover;
+
+    backdrop-filter: blur(100px);
+
+    backdrop-filter: opacity(20%);
+}
+.container-skincare{
+    background-image: linear-gradient(rgba(58, 58, 58,0.42), rgba(58, 58, 58,0.42)), url(images/skincare.png);
+    background-size: cover;
+    backdrop-filter: blur(100px);
+    backdrop-filter: opacity(10%);
+}
+.container-pele, .container-make,.container-skincare{
+    background: linear-gradient(rgba(58,58,58,0.42))
+}
+.titulo-best-seller{
+    margin: 0 auto;
+    text-align: center;
+}
+.titulo-best-seller h2{
+    margin: 1em 0;
+    font-size: 1.75em;
+}
+.container-lista-best-seller{
+    width: 100%;
+    margin: 2em auto;
+}
+
+.lista-best-seller {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    list-style: none;
+    margin: 3%;
+}
+.item-best-seller{
+    width: 20%;
+    margin: 2%; 
+    text-align: center;
+}
+.item-best-seller img{
+    max-width: 50%;
+}
+.descricao-produtos{
+    color:rgba(58, 58, 58);
+    font-weight: bold;
+    text-align: start;
+    margin-top: .75em;
+}
+.preco-produtos{
+    font-weight: bold;
+    color: #386857;
+    margin-top: .75em;
+    text-align: start;
+}
+.price {
+    color: #386857;
+    margin-top: .75em;
+}
+.price del {
+    color: #ccccccd0;
+}
+.btn-compra {
+    margin-top: 0.75em;
+    width: 240px;
+    height: 40px;
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: #3B856A;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 200ms;
+}
+.container-rodape-principal{
+    width: 100%;
+    height: 380px;
+    position: relative;
+    background-image: url("images/rodape.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.rodape-itens{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 60%;
+    align-items: center;
+}
+.input-email{
+    width: 300px;
+    padding:10px;
+    border: none;
+    outline: none;
+}
+
+.input-email::-webkit-input-placeholder{
+    color: #3A3A3A;
+    font-weight: 600;
+}
+.botao-enviar{
+    background-color: #386857;
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.container-rodape-final{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2.5em;
+}
+.rodape-final-dados{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.rodape-final-dados p{
+    color: #3A3A3A;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 16px 0;
+}
+.redes-sociais .fa-brands{
+    color: #000;
+    padding: 0 .75em;
+}
+.links-rodape{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.links-rodape h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-bottom: 2em;
+    color:#3A3A3A;
+}
+.links-rodape a{
+    text-decoration: none;
+    font-size: 14px;
+    color:#3A3A3A;
+    margin-bottom: .5em;
+}
+.links-rodape a:hover{
+    text-decoration: underline;
+}
+.copyright-final{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+.copyright-final h5{
+    margin: .75em .75em .75em 2em;
+    font-size: 1em;
+    color: #3A3A3A;
+}
+.copyright-final a{
+    margin: .75em .75em 0.75em 0;
+    color: #3A3A3A;
+}
+.show-container{
+    display: block !important;
+}
+.hide-container{
+    display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 800px){
+    header{
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .lista-links-cabecalho{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .lista-links-cabecalho li{
+        margin: .75em 0;
+    }
+    main{
+        width: auto;
+    }
+    .background-image {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .rect-collection{
+        position: unset;
+        width: 75%;
+        height: 50%;
+        font-size: .75em;
+    }
+    footer{
+        width: auto;
+    }
+    .container-rodape-principal{
+        width: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .lista-best-seller{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-best-seller{
+        width: 100%;
+    }
+    .item-best-seller p{
+        text-align: center;
+    }
+    .rodape-itens{
+        position: unset;
+    }
+    footer{
+        width: auto;
+    }
+    .container-rodape-final{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape-final-dados{
+        width:100%;
+        text-align: center;
+        margin: .75em;
+    }
+    .links-rodape{
+        width: 100%;
+        text-align: center;
+        margin: .75em;
+    }
+}
